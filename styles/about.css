@@ -1,0 +1,96 @@
+.about {
+    min-height: 120vh;
+    background: url('https://images.pexels.com/photos/242492/pexels-photo-242492.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+}
+
+.navigation {
+    background: rgb(42, 102, 170);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    min-height: 70vh;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+.about-container img {
+    width: 350px;
+}
+
+.about-card {
+    background: rgb(255, 255, 255, 0.3);
+    margin: 0 4rem;
+    border-radius: 1rem;
+    color: white;
+    max-height: 70vh;
+}
+
+.about-title {
+    text-align: center;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 1rem;
+    background-color: rgba(6, 17, 17, 0.432);
+}
+
+.about-title span {
+    color: cyan;
+}
+
+.about-description {
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    .about-description {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .about-container img{
+        width: 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about-description {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    .about-card::-webkit-scrollbar {
+        width: .2em;
+        height: .4em;
+      }
+  
+      .about-card::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 1em;
+      }
+
+    .about-title {
+        font-size: small;
+    }
+
+    .about-card {
+        overflow: scroll;
+        width: 90%;
+    }
+
+    .about-container img{
+        display: none;
+    }
+}
